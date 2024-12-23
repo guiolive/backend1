@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Aplicação de Gerenciamento</title>
+    <link rel="stylesheet" type="text/css" th:href="@{/css/styles.css}">
+</head>
+<body>
+    <header>
+        <h1>Bem-vindo à Aplicação de Gerenciamento</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a th:href="@{/produtos}">Gerenciar Produtos</a></li>
+            <li><a th:href="@{/categorias}">Gerenciar Categorias</a></li>
+        </ul>
+    </nav>
+    <nav>
+        <ul>
+            <li><a th:href="@{/produtos/novo}">Adicionar Produtos</a></li>
+            <li><a th:href="@{/categorias/nova}">Adicionar Categorias</a></li>
+        </ul>
+    </nav>
+    <nav>
+        <ul>
+            <li><a th:href="@{/h2-console}">Gerenciador de Banco de Dados</a></li>
+        </ul>
+    </nav>
+</body>
+</html>

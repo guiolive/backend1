@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Formulário de Categoria</title>
+    <link rel="stylesheet" type="text/css" th:href="@{/css/styles.css}">
+</head>
+<body>
+    <header>
+        <h1 >Adicionar Categoria</h1>
+    </header>
+    <form th:action="@{/categorias}" th:object="${categoria}" method="post">
+        <div>
+            <label for="nome">Nome:</label>
+            <input type="text" id="nome" name="nome" th:field="*{nome}">
+        </div>
+        <div>
+            <button type="submit" >Adicionar Categoria</button>
+        </div>
+    </form>
+    <nav>
+        <ul>
+            <li><a th:href="@{/categorias}">Voltar</a></li>
+        </ul>
+    </nav>
+</body>
+</html>
